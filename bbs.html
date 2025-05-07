@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAST BOY SHUB THE GOAT</title>
+
+    <style>
+
+
+        body {
+            background-color: rgb(0, 255, 221);
+            background-image: url("bg.jpeg"); /* Add this line */
+            background-size: cover; /* Adjust image size as needed */
+            background-repeat: no-repeat;
+            background-position: center center; /* Center the image */
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+
+        }
+        .container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .search_box {
+            border-radius: 40px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        form {
+            margin: 0;
+        }
+        input {
+            border: none;
+            margin: 10px;
+            font-size: 20px;
+            outline: none;
+            color: #17202A;
+            border-radius: 40px;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+        .search_box button i {
+            font-size: 20px;
+            margin: 0px 10px;
+            color: #0063D4;
+        }
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        ol {
+            list-style: decimal; /* Use decimal numbering */
+            margin: 20px;
+            padding-left: 40px; /* Add padding to the left to make space for numbers */
+            counter-reset: list-counter; /* Initialize the counter */
+        }
+        ol li {
+            margin: 10px 0; /* Space between list items */
+            padding-left: 10px; /* Space between text and the number */
+            display: flex; /* Use flexbox to align text and images */
+            align-items: center; /* Center items vertically */
+        }
+        ol li img {
+            margin-left: 15px; /* Space between text and image */
+            max-width: 100px; /* Limit image width */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ddd; /* Border around images */
+            border-radius: 5px; /* Rounded corners for images */
+        }
+        ol li::before {
+            content: counter(list-counter) ". "; /* Display the counter followed by a dot */
+            counter-increment: list-counter; /* Increment the counter */
+            font-weight: bold; /* Bold numbering */
+            margin-right: 10px; /* Space between number and text */
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #0063D4; /* Blue border with thickness */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+        #noResults {
+            display: none;
+            text-align: center;
+            font-size: 20px;
+            color: #FF0000;
+            margin-top: 20px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="search_box">
+            <form>
+                <input type="text" id="myinput" onkeyup="search()" placeholder="Search...">
+                <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button type="button"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <center>
+        <h2>BEAST BOY SHUB</h2>
+        <img src="bbs2.jpg" alt="Image of BBS" width="300" height="auto" style="border: 3px solid #000; border-radius: 10px;">
+    </center>
+
+    <hr>
+    <hr>
+    <h1>Shubham Saini, better known online as BeastBoyShub or BBS, is an Indian gaming YouTube content creator with over 6.50 million subscribers. He is known for publishing gameplay.</h1>
+    <h1>List of Games He Played</h1>
+    <h1>
+    <ol id="gameList">
+        <li>
+            <a href="https://store.steampowered.com/app/962400/Granny/" target="_blank">Granny</a>
+        </li>
+        <li>
+            Horror hospital 2 "No longer exists"
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/1460220/Evil_Nun_The_Broken_Mask/" target="_blank">Evil Nun</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/oldnews/46584" target="_blank">CSGO</a>
+        </li>
+        <li>
+            <a href="https://www.fortnite.com/?lang=en-US" target="_blank">Fortnite</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" target="_blank">PUBG PC</a>
+        </li>
+        <li>
+            PUBG Mobile "BAN In India"
+        </li>
+        <li>
+            <a href="https://r.search.yahoo.com/_ylt=AwrPo.6jMbJmrwQArw.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1724163748/RO=10/RU=https%3a%2f%2fplay.google.com%2fstore%2fapps%2fdetails%3fid%3dcom.pubg.imobile%26hl%3den_US/RK=2/RS=lIlL..sengxTGW1k4oqtLC7fC2s-" target="_blank">BGMI</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/" target="_blank">Getting over It</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/2562240/Only_Up/" target="_blank">Only Up</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/489360/CASE_Animatronics/" target="_blank">Case Animatronics 1</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/722960/CASE_2_Animatronics_Survival/" target="_blank">Case Animatronics 2</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">Elden Ring</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/1061090/Jump_King/" target="_blank">Jump King</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/374320/DARK_SOULS_III/" target="_blank">Dark Souls 3</a>
+        </li>
+        <li>
+            <a href="https://www.playstation.com/en-in/games/god-of-war-iii-remastered/" target="_blank">God Of War 3 Remastered</a>
+        </li>
+        <li>
+            <a href="https://store.steampowered.com/app/1593500/God_of_War/" target="_blank">God Of War 2018</a>
+        </li>
+        <li> <a href="https://store.steampowered.com/app/2322010/God_of_War_Ragnarok/" target="_blank"> God of War Ragnarok</a></li>
+<li> <a href="https://store.steampowered.com/app/617160/Home_Sweet_Home/" target="_blank"> Home Sweet Home</a></li>
+<li> <a href="https://store.steampowered.com/app/883710/Resident_Evil_2/" target="_blank"> Resident Evil 2 Remake </a></li>
+<li> <a href="https://store.steampowered.com/app/952060/Resident_Evil_3/" target="_blank"> Resident Evil 3 Remake</a></li>
+<li> <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/" target="_blank"> Resident Evil 4 Remake</a></li>
+<li> <a href="https://store.steampowered.com/app/21690/Resident_Evil_5/" target="_blank"> Resident Evil 5</a></li>
+<li> <a href="https://store.steampowered.com/app/221040/Resident_Evil_6/" target="_blank"> Resident Evil 6</a></li>
+<li> <a href="https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/" target="_blank"> Resident Evil 7 Biohazard</a></li>
+<li> <a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/?curator_clanid=34827950" target="_blank"> Resident Evil 8 Village</a></li>
+<li> <a href="https://store.steampowered.com/app/222480/Resident_Evil_Revelations/" target="_blank"> Resident Evil Revelations </a></li>
+<li> <a href="https://playvalorant.com/en-us/?gad_source=1&gclid=Cj0KCQjwtsy1BhD7ARIsAHOi4xZlOXpW1_FQWL03UaOUIkuo51rqha8rLk6HDJ6zCYOtrmqFs9WMlwAaAka8EALw_wcB&gclsrc=aw.ds" target="_blank"> Valorant</a></li>
+<li> <a href="https://store.steampowered.com/app/668580/Atomic_Heart/" target="_blank"> Atomic Heart</a></li>
+<li> <a href="https://store.steampowered.com/app/304430/INSIDE/" target="_blank"> Inside</a></li>
+<li> <a href="https://store.steampowered.com/app/48000/LIMBO/" target="_blank"> Limbo</a></li>
+<li> <a href="https://store.steampowered.com/app/732690/FIVE_NIGHTS_AT_FREDDYS_HELP_WANTED/" target="_blank"> Five Nights With Freddy's:help wanted Vr </a></li>
+<li> <a href="https://store.steampowered.com/app/264710/Subnautica/" target="_blank"> Subnautica</a></li>
+<li> <a href="https://store.steampowered.com/app/848450/Subnautica_Below_Zero/" target="_blank"> Subnautica below Zero</a></li>
+<li> <a href="https://store.steampowered.com/app/771920/TOGETHER_VR/" target="_blank"> Together vr</a></li>
+<li> <a href="https://store.steampowered.com/app/13600/Prince_of_Persia_The_Sands_of_Time/?curator_clanid=45095788" target="_blank"> Prince Of Persia Sands Of Time </a></li>
+<li> <a href="https://store.steampowered.com/app/13500/Prince_of_Persia_Warrior_Within/?curator_clanid=45095788" target="_blank"> Prince Of Persia Warrior Within</a></li>
+<li> <a href="https://store.steampowered.com/app/1659040/HITMAN_World_of_Assassination/" target="_blank"> Hitman 1,2 and 3"Now Called as Hitman World Of Assassination" </a></li>
+<li> <a href="https://www.minecraft.net/en-us" target="_blank"> Minecraft</a></li>
+<li> <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" target="_blank"> Lethal Company</a></li>
+<li> <a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank"> Palworld</a></li>
+<li> <a href=""> </a>BBS Own Game Made By Withkoji.com "Website Has Been Shutdown" target="_blank"</li>
+<li> <a href="https://store.steampowered.com/app/1022850/Dark_Deception_Complete/" target="_blank"> Dark Deception</a></li>
+<li> <a href="https://store.steampowered.com/app/969760/Omno/" target="_blank" Omno</a></li>
+<li> <a href="https://store.steampowered.com/app/923470/MOMOEXE/" target="_blank"> Momo.exe 1</a></li>
+<li> <a href="https://store.steampowered.com/app/946780/MOMOEXE_2/" target="_blank"> Momo.exe 2</a></li>
+<li> <a href="https://store.steampowered.com/app/617830/SUPERHOT_VR/" target="_blank"> Superhot Vr</a></li>
+<li> <a href="https://store.steampowered.com/app/2248760/Car_For_Sale_Simulator_2023/" target="_blank"> Car For Sale </a></li>
+<li> <a href="https://store.steampowered.com/app/2248760/Car_For_Sale_Simulator_2023/" target="_blank"> Dying Light</a></li>
+<li> <a href="https://store.steampowered.com/app/2172010/Until_Dawn/" target="_blank" Until Dawn</a></li>
+<li> <a href="https://store.steampowered.com/app/1265920/Life_is_Strange_Remastered/" target="_blank"> Life Is Strange 1 "Not Available On Youtube" </a></li>
+<li> <a href="https://store.steampowered.com/app/532210/Life_is_Strange_2/" target="_blank"> Life Is Strange 2</a></li>
+<li> <a href="https://store.steampowered.com/app/936790/Life_is_Strange_True_Colors/" target="_blank"> Life Is Strange True Colours</a></li>
+<li> <a href="https://store.steampowered.com/app/207610/The_Walking_Dead/" target="_blank"> The Walking Dead Season 1 "BBs video Not Available On Youtube"</a></li>
+<li> <a href="https://store.steampowered.com/app/261030/The_Walking_Dead_Season_Two/" target="_blank"> The Walking Dead Season 2 "BBs video Not Available On Youtube"</a></li>
+<li> <a href="https://store.steampowered.com/app/536220/The_Walking_Dead_A_New_Frontier/" target="_blank"> The Walking Dead Season 3 "BBs video Not Available On Youtube"</a></li>
+<li> <a href="https://store.steampowered.com/app/866800/The_Walking_Dead_The_Final_Season/" target="_blank"> The Walking Dead Season 4</a></li>
+<li> <a href="https://store.steampowered.com/app/2657600/Rotten_Flesh__Cosmic_Horror_Survival_Game/" target="_blank"> Rotten Flesh</a></li>
+<li> <a href="https://store.steampowered.com/app/268050/The_Evil_Within/" target="_blank"> Evil Within 1</a></li>
+<li> <a href="https://store.steampowered.com/app/601430/The_Evil_Within_2/" target="_blank"> Evil Within 2</a></li>
+<li> <a href="https://store.steampowered.com/app/1443490/Siren_Head_Awakening/" target="_blank"> Sirenhead</a></li>
+<li> <a href="https://store.steampowered.com/app/280850/Dollhouse/" target="_blank"> Doll House</a></li>
+<li> <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank"> Gta 5</a></li>
+<li> <a href="https://store.steampowered.com/app/1205040/Granny_Chapter_Two/" target="_blank"> Granny 2</a></li>
+<li> <a href="https://store.steampowered.com/app/1707550/Granny_3/" target="_blank"> Granny 3</a></li>
+<li> <a href="https://7-days.en.uptodown.com/windows" target="_blank"> 7 Days</a> "Notice:Uptodown website"</li>
+<li> <a href="https://store.steampowered.com/app/2506160/Fears_to_Fathom__Ironbark_Lookout/" target="_blank"> Fear To Fathom</a></li>
+<li> <a href="https://store.steampowered.com/app/2200190/Chillas_Art_The_Karaoke/" target="_blank"> The Kareoke</a></li>
+<li> <a href="https://store.steampowered.com/app/780840/Kuchisake_Onna/" target="_blank"> Kuchisake Onna</a></li>
+<li> <a href=""> </a>I am Egg "Not available"</li>
+<li> <a href="https://store.steampowered.com/app/2633640/Eyes_The_Horror_Game/" target="_blank"> The Eyes</a></li>
+<li> <a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/" target="_blank"> Sekiro Shadow Dies Twice</a></li>
+<li> <a href="https://play.google.com/store/apps/details?id=com.kalipsogames.psychopathhunt&hl=en_IN" target="_blank"> Mr.Meat</a>  "Only for Androids"</li>
+<li> <a href="https://play.google.com/store/apps/details?id=com.keplerians.icescream&hl=en_IN" target="_blank"> Ice Cream Man 1</a>  "Only for Androids"</li>
+<li> <a href="https://store.steampowered.com/app/521890/Hello_Neighbor/" target="_blank"> Hello Nieghbour</a></li>
+<li> <a href="https://store.steampowered.com/app/424840/Little_Nightmares/?curator_clanid=42309150" target="_blank"> Little Nightmare 1</a></li>
+<li> <a href="https://store.steampowered.com/app/860510/Little_Nightmares_II/?curator_clanid=42309150" target="_blank"> Little Nightmare 2</a></li>
+<li> <a href="https://store.steampowered.com/app/939850/The_Dark_Pictures_Anthology_Man_of_Medan/" target="_blank"> Man Of Medan</a></li>
+<li> <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank"> Cyber Punk 2077</a></li>
+<li> <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" target="_blank"> Detroit Become Human </a></li>
+<li> <a href="https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/" target="_blank"> Spider Man </a></li>
+<li> <a href="https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/" target="_blank"> Spider Man Miles Morals</a></li>
+<li> <a href="https://store.steampowered.com/sub/128345/" target="_blank"> Mortal Combat XL</a></li>
+<li> <a href="https://store.steampowered.com/app/1332010/Stray/" target="_blank"> Stray</a></li>
+<li> <a href="https://store.steampowered.com/app/582550/Passpartout_The_Starving_Artist/" target="_blank"> Passpartout: The Starving Artist</a></li>
+<li> <a href="https://store.steampowered.com/app/1571100/Passpartout_2_The_Lost_Artist/" target="_blank"> Passpartout 2: The Lost Artist</a></li>
+<li> <a href="https://genshin.hoyoverse.com/en/" target="_blank"> Genshin Impact</a></li>
+<li> <a href="https://store.steampowered.com/app/1549180/Propnight/" target="_blank"> Propnight</a></li>
+<li> <a href="https://store.steampowered.com/app/730390/Raji_An_Ancient_Epic/" target="_blank"> Raji</a></li>
+<li> <a href="https://store.steampowered.com/app/1194630/The_Dark_Pictures_Anthology_Little_Hope/" target="_blank"> Little Hope</a></li>
+<li> <a href="https://www.fallguys.com/en-US" target="_blank"> Fall Guys</a></li>
+<li> <a href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank"> Among Us</a></li>
+<li> <a href="https://bilalaika.itch.io/pumpkin-panic" target="_blank"> Pumpkin Panic</a></li>
+<li> <a href="https://store.steampowered.com/app/2110820/Granny_Remake/" target="_blank"> Granny Remake</a></li>
+<li> <a href="https://store.steampowered.com/app/1089980/The_Henry_Stickmin_Collection/" target="_blank"> The Henry Stickmin Collection</a></li>
+<li> <a href="https://store.steampowered.com/app/960910/Heavy_Rain/" target="_blank"> Heavy Rain</a></li>
+<li> <a href="https://store.steampowered.com/app/214490/Alien_Isolation/" target="_blank"> Alien Isolation</a></li>
+<li> <a href="https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/" target="_blank"> Death Stranding</a></li>
+<li> <a href="https://store.steampowered.com/app/622650/Bendy_and_the_Ink_Machine/" target="_blank"> Bendy And The Ink Machine</a></li>
+<li> <a href="https://store.steampowered.com/app/1721470/Poppy_Playtime/" target="_blank"> Poppy Playtime 1</a></li>
+<li> <a href="https://store.steampowered.com/app/1817490/Poppy_Playtime__Chapter_2/" target="_blank"> Poppy Playtime - Chapter 2</a></li>
+<li> <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" target="_blank"> The Last Of Us 1</a></li>
+<li> <a href="https://www.playstation.com/en-in/games/the-last-of-us-part-ii/" target="_blank"> The Last Of Us 2</a> "Only for console"</li>
+<li> <a href="https://store.steampowered.com/app/519030/Dont_Let_Go/" target="_blank"> Don't Let Go </a></li>
+<li> <a href="http://slither.com/io" target="_blank"> Slither.io</a></li>
+<li> <a href="https://store.steampowered.com/app/620980/Beat_Saber/" target="_blank"> Beat Saber Vr</a></li>
+<li> <a href="https://store.steampowered.com/app/1295920/The_Mortuary_Assistant/" target="_blank"> The Mortuary Assistant</a></li>
+<li> <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank"> Red Dead Redemtion 2</a></li>
+<li> <a href="https://store.steampowered.com/app/246620/Plague_Inc_Evolved/" target="_blank"> Plague inc</a></li>
+<li> <a href="https://store.steampowered.com/app/250320/The_Wolf_Among_Us/" target="_blank"> The Wolf Among Us</a></li>
+<li> <a href="https://store.steampowered.com/app/477160/Human_Fall_Flat/" target="_blank"> Human Fall Flat</a></li>
+<li> <a href="https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider_Definitive_Edition/" target="_blank"> Shadow Of The Tomb Raider</a></li>
+<li> <a href="https://store.steampowered.com/app/594330/Visage/" target="_blank"> Visage</a></li>
+<li> <a href="https://store.steampowered.com/app/688130/Pogostuck_Rage_With_Your_Friends/" target="_blank"> Pogostuck: Rage With Your Friends</a></li>
+<li> <a href="https://trap-adventure-2.en.uptodown.com/android" target="_blank"> Trap Adventure 2</a> Notice: uptodown website and Only for Androids</li>
+<li> <a href="https://entity-a-horror-escape.en.uptodown.com/android" target="_blank"> Entity</a> Notice: uptodown website and Only for Androids</li>
+<li> <a href="https://store.steampowered.com/app/2497900/DONT_SCREAM/" target="_blank"> Don't Scream</a></li>
+<li> <a href="https://store.steampowered.com/app/851850/DRAGON_BALL_Z_KAKAROT/" target="_blank"> Dragon Ball Z Kakarot</a></li>
+<li> <a href="https://store.steampowered.com/app/414700/Outlast_2/" target="_blank"> Outlast 2</a></li>
+<li> <a href="https://store.steampowered.com/app/2835570/Buckshot_Roulette/" target="_blank"> Buckshot Roulette</a></li>
+<li> <a href="https://store.steampowered.com/app/1843090/Chillas_Art_The_Closing_Shift/" target="_blank"> The Closing Shift</a></li>
+<li> <a href="https://store.steampowered.com/app/402040/The_Guest/" target="_blank"> The Guest</a></li>
+<li> <a href="https://store.steampowered.com/app/1349960/Chillas_Art_The_Ghost_Train/" target="_blank"> The Ghost Train</a></li>
+<li> <a href="https://store.steampowered.com/app/1766740/ChooChoo_Charles/" target="_blank"> Cho Cho Charles</a></li>
+<li> <a href="https://store.steampowered.com/app/485510/Nioh_Complete_Edition/" target="_blank"> Nioh</a></li>
+<li> <a href="https://store.steampowered.com/app/1325200/Nioh_2__The_Complete_Edition/" target="_blank"> Nioh 2</a></li>
+<li> <a href="https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/" target="_blank"> Ghost Of Tsushima</a></li>
+<li> <a href="https://store.steampowered.com/app/1281590/The_Dark_Pictures_Anthology_House_of_Ashes/" target="_blank"> House Of Ashes</a></li>
+<li> <a href="https://store.steampowered.com/app/2314720/Chillas_Art_Parasocial/" target="_blank"> Parasocial</a></li>
+<li> <a href="https://store.steampowered.com/app/2593900/Chillas_Art_The_Kidnap/" target="_blank"> The Kidnap</a></li>
+<li> <a href="https://store.steampowered.com/app/2881650/Content_Warning/" target="_blank"> Content Warning</a></li>
+<li> <a href="https://store.steampowered.com/app/2653790/The_Exit_8/" target="_blank"> The Exit 8</a></li>
+<li> <a href="https://www.playstation.com/en-us/games/bloodborne/" target="_blank"> Bloodborne</a>  only for console</li>
+<li> <a href="https://store.steampowered.com/app/2497920/A_Difficult_Game_About_Climbing/" target="_blank"> A Difficult Game About Climbing</a></li>
+<li> <a href="https://wouldyourather.app/s/j17ik" target="_blank"> Would You Rather</a> "There are many options on internet" </li>
+<li> <a href="https://poki.com/en/g/google-feud" target="_blank"> Google Feud</a></li>
+<li> <a href="https://store.steampowered.com/app/2567870/Chained_Together/" target="_blank"> Chained Together</a></li>
+<li> <a href="https://store.steampowered.com/app/2636420/Graveyard_Shift/" target="_blank"> Graveyard Shift</a></li>
+<li> <a href="https://store.steampowered.com/app/2963880/Murky_Divers/" target="_blank"> Murky Divers</a></li>
+<li> <a href="https://store.steampowered.com/app/967050/Pacify/" target="_blank"> Pacify</a></li>
+<li> <a href="https://store.steampowered.com/app/1274570/DEVOUR/" target="_blank"> Devour</a></li>
+<li> <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank"> Dead By Daylight</a></li>
+<li> <a href="https://store.steampowered.com/app/1571440/Lunch_Lady/" target="_blank"> The Lunch Lady</a></li>
+<li> <a href="https://store.steampowered.com/app/1147960/Chillas_Art_Okaeri/" target="_blank"> Okairi</a></li>
+<li> <a href="https://store.steampowered.com/app/2793370/Chillas_Art_Shinkansen_0___0/" target="_blank"> Shinkansen 0</a></li>
+<li> <a href="https://willyoupressthebutton.com/" target="_blank"> Will You Press The Button</a></li>
+<li> <a href="https://store.steampowered.com/app/792300/The_Beast_Inside/" target="_blank"> The Beast Inside</a></li>
+<li> <a href="https://www.playstation.com/en-in/games/uncharted-4-a-thiefs-end/" target="_blank"> Uncharted 4</a> "Not Available on pc only for console"</li>
+<li> <a href="https://store.steampowered.com/app/1670870/MADiSON/" target="_blank"> Madison</a></li>
+<li> <a href="https://www.playstation.com/en-in/games/demons-souls/" target="_blank"> Demon's Souls </a> "Not Available on pc only for console"</li>
+<li> <a href="https://store.steampowered.com/app/1567020/The_Dark_Pictures_Anthology_The_Devil_in_Me/" target="_blank"> The Devil In Me</a></li>
+<li> <a href="https://store.steampowered.com/app/867960/Remorse_The_List/" target="_blank"> Remorse The List</a></li>
+<li> <a href="https://store.steampowered.com/app/1946700/Layers_of_Fear/" target="_blank"> Layers Of Fear</a></li>
+<li> <a href="https://store.steampowered.com/app/1184790/SCP_Fragmented_Minds/" target="_blank"> Scp.Fragmented Minds</a></li>
+<li> <a href="https://store.steampowered.com/app/1154830/Scathe/" target="_blank"> Scathe</a></li>
+<li> <a href="https://store.steampowered.com/app/379720/DOOM/" target="_blank"> Doom 2016</a></li>
+<li> <a href="https://store.steampowered.com/app/1268790/Dark_Fracture/" target="_blank"> Dark Fracture</a></li>
+<li> <a href="https://store.steampowered.com/app/1577120/The_Quarry/" target="_blank"> The Quarry</a></li>
+<li> <a href="https://store.steampowered.com/app/427290/Vampyr/" target="_blank"> Vampyr</a></li>
+<li> <a href="https://store.steampowered.com/app/837470/Untitled_Goose_Game/" target="_blank"> Untitled Goose Game</a></li>
+<li> <a href="https://store.steampowered.com/app/1132970/Time_To_Stop_Time/" target="_blank"> Time To Stop Time</a></li>
+<li> <a href="https://store.steampowered.com/app/250620/Among_the_Sleep__Enhanced_Edition/" target="_blank"> Among The Sleep</a></li>
+<li> <a href="https://store.steampowered.com/app/233720/Surgeon_Simulator/" target="_blank"> Surgeon Simulator</a></li>
+<li> <a href="https://store.steampowered.com/app/960990/Beyond_Two_Souls/" target="_blank"> Beyond Two Souls</a></li>
+<li> <a href="https://store.steampowered.com/app/519860/DUSK/" target="_blank"> Dusk</a></li>
+<li> <a href="https://store.steampowered.com/app/1472560/I_Am_Fish/" target="_blank"> I Am Fish</a></li>
+<li> <a href="https://www.bandainamcoent.com/games/jump-force" target="_blank"> Jump Force</a></li>
+<li> <a href="https://store.steampowered.com/app/353560/Plug__Play/" target="_blank"> Plug And Play</a></li>
+<li> <a href="https://store.steampowered.com/app/793370/KIDS/" target="_blank"> Kids</a></li>
+<li> <a href="https://store.steampowered.com/app/926370/Home_Security/" target="_blank"> Home Security</a></li>
+<li> <a href="https://store.steampowered.com/app/699130/World_War_Z/" target="_blank"> World War Z</a></li>
+<li> <a href="https://store.steampowered.com/app/1177660/Escape_the_Ayuwoki/" target="_blank"> Escape The Ayuwoki</a></li>
+<li> <a href="https://store.steampowered.com/app/412020/Metro_Exodus/" target="_blank"> Metro Exodus</a></li>
+<li> <a href="https://store.steampowered.com/app/1172470/Apex_Legends/" target="_blank"> Apex Legends</a></li>
+<li> <a href="https://store.steampowered.com/app/802730/Mother_Simulator/" target="_blank"> Mother Simulator</a></li>
+<li> <a href="https://en.akinator.com/" target="_blank"> Akinator</a></li>
+<li> <a href="https://unity5games.itch.io/t-rex-breakout-free-dinosaur-game" target="_blank"> Jurassic World T Rex Breakout</a></li>
+<li> <a href="https://basically-games.itch.io/baldis-basics" target="_blank"> Baldi's Basics</a></li>
+<li> <a href="https://play.google.com/store/apps/details?id=com.dvloper.slendrinatheforest&hl=en_IN" target="_blank"> Slendrina Must Die: The Forest</a> "Only for Androids"</li>
+<li> <a href="https://play.google.com/store/apps/details?id=com.PoisonGames.SlendermanMustDie&hl=en_IN" target="_blank"> Slender Man: Must Die</a> "Only for Androids"</li>
+<li> <a href="https://play.google.com/store/apps/details?id=com.dvloper.slendrinacellarfree&hl=en_IN" target="_blank"> Slendrina The Cellar</a> "Only for Androids"</li>
+<li> <a href="https://store.playstation.com/en-us/concept/229397" target="_blank"> WWE 2018</a>  coming soon in playstation</li>
+<li> <a href="https://play.google.com/store/apps/details?id=com.Yiming.BakeSimulator&hl=en_IN" target="_blank"> Bake Simulator</a> Only for Androids</li>
+<li> <a href="https://store.steampowered.com/app/613100/House_Flipper/" target="_blank"> House Flipper</a></li>
+<li> <a href="https://road-rash.en.softonic.com/" target="_blank"> Road Rash </a> noticesoftonic website </li>
+<li> <a href="https://store.steampowered.com/app/2674190/Akai_Onna/" target="_blank"> Akai Onna</a></li>
+<li> <a href="https://store.steampowered.com/app/1306620/Chillas_Art_Missing_Children/" target="_blank"> Missing Children</a></li>
+<li> <a href="https://store.steampowered.com/app/1173220/Bleak_Faith_Forsaken/" target="_blank"> Bleak Faith Forsaken</a></li>
+<li> <a href="https://store.steampowered.com/app/1627720/Lies_of_P/" target="_blank"> Lies Of P</a></li>
+<li> <a href="https://store.steampowered.com/app/1622910/Still_Wakes_the_Deep/" target="_blank"> Still Wakes The Deep</a></li>
+<li> <a href="https://www.playstation.com/en-in/games/stellar-blade/" target="_blank"> Stellar Blade</a>"Available on PS5"</li>
+<li> <a href="https://store.steampowered.com/app/1182900/A_Plague_Tale_Requiem/" target="_blank"> Plague Tale: Requiem</a></li>
+<li> <a href="https://www.playstation.com/en-in/games/rise-of-the-ronin/" target="_blank"> RISE OF THE RONIN</a> "Available on PS5"</li>
+<li> <a href="https://www.playstation.com/en-in/games/marvels-spider-man-2/" target="_blank"> SPIDERMAN-2 </a> "Available on PS5"</li>
+<li> <a href="https://store.steampowered.com/app/1708010/The_Expanse_A_Telltale_Series/" target="_blank"> THE EXPANSE </a></li>
+<li> <a href="https://store.steampowered.com/app/1046820/Im_on_Observation_Duty/" target="_blank"> I AM ON OBSERVATION DUTY </a></li>
+<li> <a href="https://store.steampowered.com/app/2093010/Supernatural/"> Supernatural</a></li>
+    </ol>   
+    
+    <div id="noResults">NOT YET PLAYED>3</div>
+    </h1>
+    <script>
+        function search() {
+            let input = document.getElementById('myinput').value.toUpperCase();
+            let gameList = document.getElementById('gameList');
+            let items = gameList.getElementsByTagName('li');
+            let noResults = document.getElementById('noResults');
+            let visible = false;
+
+            for (let i = 0; i < items.length; i++) {
+                let item = items[i];
+                let text = item.textContent || item.innerText;
+
+                if (text.toUpperCase().indexOf(input) > -1) {
+                    item.style.display = "";
+                    visible = true;
+                } else {
+                    item.style.display = "none";
+                }
+            }
+
+            noResults.style.display = visible ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
